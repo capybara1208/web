@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jack Lin 個人推甄網站</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Microsoft JhengHei";
+}
+
+/* Header */
+header{
+background:linear-gradient(135deg,#1f4037,#99f2c8);
+color:white;
+text-align:center;
+padding:40px;
+}
+
+header img{
+width:120px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+/* 主框架 */
+.container{
+display:flex;
+min-height:80vh;
+}
+
+/* 側邊選單 */
+nav{
+width:230px;
+background:#2c3e50;
+}
+
+nav a{
+display:block;
+color:white;
+padding:15px;
+text-decoration:none;
+border-bottom:1px solid #34495e;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#1abc9c;
+padding-left:25px;
+}
+
+/* 內容區 */
+main{
+flex:1;
+padding:30px;
+background:#f5f6fa;
+}
+
+/* 卡片 */
+.card{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 個人資料表格 */
+table{
+width:100%;
+margin-top:15px;
+border-collapse:collapse;
+}
+
+td{
+padding:8px;
+border:none;
+}
+
+/* 技能條 */
+.skill{
+margin-top:15px;
+}
+
+.bar{
+height:10px;
+background:#ddd;
+border-radius:5px;
+margin-top:5px;
+}
+
+.level{
+height:10px;
+background:#1abc9c;
+border-radius:5px;
+}
+
+/* Footer */
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* 回到最上面按鈕 */
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#1abc9c;
+color:white;
+border:none;
+padding:12px 16px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+display:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+#topBtn:hover{
+background:#16a085;
+}
+
+/* 平板 */
+@media (max-width:900px){
+
+.container{
+flex-direction:column;
+}
+
+nav{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+}
+
+nav a{
+flex:1;
+text-align:center;
+border-right:1px solid #34495e;
+}
+
+}
+
+/* 手機 */
+@media (max-width:600px){
+
+header{
+padding:25px;
+}
+
+header h1{
+font-size:24px;
+}
+
+header img{
+width:90px;
+}
+
+main{
+padding:15px;
+}
+
+.card{
+padding:15px;
+}
+
+nav a{
+font-size:14px;
+padding:12px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="photo.jpg" alt="個人照片">
+<h1>Jack Lin</h1>
+<p>AI × Python × STEAM</p>
+</header>
+
+<div class="container">
+
+<nav>
+<a href="#about">個人簡介</a>
+<a href="#bio">個人自傳</a>
+<a href="#learning">學習歷程</a>
+<a href="#project">專題作品</a>
+<a href="#competition">競賽成果</a>
+<a href="#skill">證照與技能</a>
+<a href="#future">未來規劃</a>
+<a href="#hobby">興趣愛好</a>
+</nav>
+
+<main>
+
+<div class="card" id="about">
+<h2>個人簡介</h2>
+
+<table>
+
+<tr>
+<td>姓名：</td>
+<td>Jack Lin</td>
+</tr>
+
+<tr>
+<td>就讀學校：</td>
+<td>國立基隆高級中學</td>
+</tr>
+
+<tr>
+<td>申請科系：</td>
+<td>資訊工程 / 人工智慧相關科系</td>
+</tr>
+
+<tr>
+<td>Email：</td>
+<td>example@email.com</td>
+</tr>
+
+<tr>
+<td>專長：</td>
+<td>Python、AI視覺辨識、STEAM專題</td>
+</tr>
+
+</table>
+
+<p>
+我對人工智慧與程式設計具有高度興趣，
+曾利用 Python 開發 AI 視覺程式，
+進行手語動作偵測，希望透過科技幫助聽障族群。
+</p>
+
+</div>
+
+<div class="card" id="bio">
+<h2>自傳</h2>
+<p>
+我從高中開始接觸程式設計，對於人工智慧與科技應用產生濃厚興趣。
+在學習過程中，我透過自學與課程練習逐漸熟悉 Python 程式語言，
+並嘗試將 AI 視覺技術應用在手語辨識專題中，希望能透過科技
+協助聽障族群的溝通需求。
+
+未來希望在大學持續精進資訊工程與人工智慧領域，
+培養解決問題與創新應用的能力。
+</p>
+</div>
+
+<div class="card" id="learning">
+<h2>學習歷程</h2>
+<p>
+在學習過程中，我逐漸培養程式設計能力，
+並透過 Python、AI 視覺辨識以及 STEAM 專題，
+探索科技如何解決實際問題。
+</p>
+</div>
+
+<div class="card" id="project">
+<h2>專題作品</h2>
+<h3>AI 手語辨識系統</h3>
+<p>
+利用 Python 與電腦視覺技術偵測手語動作，
+並將其轉換為文字，以協助聽障族群進行溝通。
+</p>
+</div>
+
+<div class="card" id="competition">
+<h2>競賽成果</h2>
+<p>
+參與各類資訊與科技相關活動與競賽，
+透過實作與團隊合作提升問題解決能力。
+</p>
+</div>
+
+<div class="card" id="skill">
+
+<h2>證照與技能</h2>
+
+<div class="skill">
+Python
+<div class="bar">
+<div class="level" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+AI / Computer Vision
+<div class="bar">
+<div class="level" style="width:70%"></div>
+</div>
+</div>
+
+<div class="skill">
+STEAM 專題
+<div class="bar">
+<div class="level" style="width:75%"></div>
+</div>
+</div>
+
+</div>
+
+<div class="card" id="future">
+<h2>未來規劃</h2>
+<p>
+未來希望深入學習人工智慧與資料科學，
+並持續將 AI 技術應用於社會議題，
+讓科技能真正幫助更多人。
+</p>
+</div>
+
+<div class="card" id="hobby">
+<h2>興趣愛好</h2>
+<p>
+我的興趣包含程式設計、人工智慧技術探索以及科技專題研究。
+平時也喜歡閱讀科技相關文章與學習新的程式技術，
+並透過實作專題提升自己的能力。
+
+此外，我也喜歡運動與團隊合作活動，
+培養良好的溝通能力與團隊精神。
+</p>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+© 2026 Jack Lin Portfolio
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script>
+
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+
+if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+topBtn.style.display = "block";
+}else{
+topBtn.style.display = "none";
+}
+
+};
+
+topBtn.onclick = function(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+};
+
+</script>
+
+</body>
+</html>
